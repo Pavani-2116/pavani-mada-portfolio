@@ -3,6 +3,11 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
+    title: "Deloitte Virtual Internship – Data Analyst",
+    duration: "Virtual Internship",
+    desc: "Completed a technology consulting virtual internship program by Deloitte, working on data analysis tasks and gaining hands-on experience with real-world business data and analytics workflows.",
+  },
+  {
     title: "Foundation of Modern Machine Learning (FMML)",
     duration: "August – May",
     desc: "Participated in a structured learning program focused on modern machine learning concepts and practical applications.",
