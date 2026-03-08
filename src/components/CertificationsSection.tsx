@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Award, BadgeCheck, ShieldCheck, GraduationCap, Code, FileCode, Laptop } from "lucide-react";
+import { Award, BadgeCheck, ShieldCheck, GraduationCap, Code, FileCode, Laptop, Database } from "lucide-react";
 
 const certifications = [
   {
@@ -43,6 +43,12 @@ const certifications = [
     title: "Python Programming Certification",
     issuer: "Infosys Springboard",
     desc: "Completed training on Python programming covering basic syntax, programming concepts, and real-world problem solving.",
+  },
+  {
+    icon: Database,
+    title: "SQL Certification",
+    issuer: "Simplilearn",
+    desc: "Completed a certification course on SQL covering database fundamentals, queries, joins, subqueries, and data manipulation techniques.",
   },
 ];
 
