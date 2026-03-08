@@ -44,6 +44,12 @@ const certifications = [
     issuer: "Infosys Springboard",
     desc: "Completed training on Python programming covering basic syntax, programming concepts, and real-world problem solving.",
   },
+  {
+    icon: Database,
+    title: "SQL Certification",
+    issuer: "Simplilearn",
+    desc: "Completed a certification course on SQL covering database fundamentals, queries, joins, subqueries, and data manipulation techniques.",
+  },
 ];
 
 const CertificationsSection = () => {
