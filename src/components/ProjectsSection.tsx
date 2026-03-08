@@ -1,24 +1,41 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, BarChart3, GraduationCap, Database } from "lucide-react";
+import { Github, Gamepad2, Languages, FileText, Brain, Recycle } from "lucide-react";
 
 const projects = [
   {
-    icon: BarChart3,
-    title: "Sales Dashboard Analysis",
-    desc: "Built an interactive dashboard to analyze sales performance and trends using Power BI and Excel. Visualized KPIs, regional performance, and temporal trends for data-driven decision making.",
-    tech: ["Power BI", "Excel", "Data Analysis"],
+    icon: Gamepad2,
+    title: "Tic Tac Toe Game",
+    desc: "Developed an interactive Tic Tac Toe game with a user-friendly interface where players can play against each other. The project demonstrates basic game logic, UI design, and event handling.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/pavani-mada/tic-tac-toe",
   },
   {
-    icon: GraduationCap,
-    title: "Student Performance Analysis",
-    desc: "Analyzed student data using Python to identify patterns between study habits and academic results. Applied data visualization and statistical techniques to derive actionable insights.",
-    tech: ["Python", "Pandas", "Matplotlib"],
+    icon: Languages,
+    title: "Multilingual Sentiment Analyzer",
+    desc: "Built a machine learning based sentiment analysis system capable of analyzing text in multiple languages and determining whether the sentiment is positive, negative, or neutral.",
+    tech: ["Python", "Machine Learning", "NLP"],
+    github: "#",
   },
   {
-    icon: Database,
-    title: "SQL Sales Data Analysis",
-    desc: "Performed comprehensive sales data analysis using SQL queries to generate business insights, including revenue trends, top-performing products, and customer segmentation.",
-    tech: ["SQL", "MySQL", "Data Analysis"],
+    icon: FileText,
+    title: "Resume Builder and Score Checker",
+    desc: "Developed a web application that helps users create professional resumes and analyze resume quality using scoring logic to improve job readiness.",
+    tech: ["HTML", "CSS", "JavaScript", "Python"],
+    github: "#",
+  },
+  {
+    icon: Brain,
+    title: "SkillPath AI",
+    desc: "Designed an AI-powered platform that helps users identify skills they need to learn based on their career goals and provides personalized learning recommendations.",
+    tech: ["Python", "Machine Learning", "Web Development"],
+    github: "#",
+  },
+  {
+    icon: Recycle,
+    title: "Smart Recycling Waste Classifier",
+    desc: "Built an AI model that classifies waste materials such as plastic, paper, and metal to help improve recycling efficiency and promote environmental sustainability.",
+    tech: ["Python", "Machine Learning", "Computer Vision"],
+    github: "#",
   },
 ];
 
@@ -63,14 +80,14 @@ const ProjectsSection = () => {
                   </span>
                 ))}
               </div>
-              <div className="flex gap-3">
-                <a href="#" className="text-sm text-primary hover:underline flex items-center gap-1">
-                  <Github size={14} /> Code
-                </a>
-                <a href="#" className="text-sm text-primary hover:underline flex items-center gap-1">
-                  <ExternalLink size={14} /> Demo
-                </a>
-              </div>
+              <a
+                href={p.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-primary hover:underline flex items-center gap-1 w-fit"
+              >
+                <Github size={14} /> View on GitHub
+              </a>
             </motion.div>
           ))}
         </div>
