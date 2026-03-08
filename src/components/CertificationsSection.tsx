@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Award, BadgeCheck, ShieldCheck, GraduationCap } from "lucide-react";
+import { Award, BadgeCheck, ShieldCheck, GraduationCap, Code, FileCode, Laptop } from "lucide-react";
 
 const certifications = [
   {
@@ -26,6 +26,24 @@ const certifications = [
     issuer: "FMML Program",
     desc: "Participated in a structured learning program focused on modern machine learning concepts and applications.",
   },
+  {
+    icon: Code,
+    title: "HTML & CSS Certification",
+    issuer: "Udemy",
+    desc: "Completed a course on HTML and CSS covering the fundamentals of web development including webpage structure, styling, responsive layouts, and modern UI design.",
+  },
+  {
+    icon: FileCode,
+    title: "Python Programming Certification",
+    issuer: "Edyst",
+    desc: "Learned Python programming fundamentals including data types, control structures, functions, and problem solving using Python.",
+  },
+  {
+    icon: Laptop,
+    title: "Python Programming Certification",
+    issuer: "Infosys Springboard",
+    desc: "Completed training on Python programming covering basic syntax, programming concepts, and real-world problem solving.",
+  },
 ];
 
 const CertificationsSection = () => {
@@ -44,7 +62,7 @@ const CertificationsSection = () => {
           <div className="w-16 h-1 gradient-bg rounded mb-8" />
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((c, i) => (
             <motion.div
               key={c.title}
