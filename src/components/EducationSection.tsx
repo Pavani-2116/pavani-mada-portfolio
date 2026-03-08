@@ -12,15 +12,15 @@ const education = [
   {
     icon: BookOpen,
     title: "Intermediate",
-    institution: "Andhra Pradesh Board of Intermediate Education",
-    period: "",
+    institution: "Vidhya Vikas Junior College",
+    period: "Percentage: 86.1%",
     details: [],
   },
   {
     icon: School,
     title: "SSC",
-    institution: "Andhra Pradesh Board of Secondary Education",
-    period: "",
+    institution: "ZPHHS High School",
+    period: "Percentage: 91%",
     details: [],
   },
 ];
