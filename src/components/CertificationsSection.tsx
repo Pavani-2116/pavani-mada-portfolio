@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Award, BadgeCheck, ShieldCheck, GraduationCap, Code, FileCode, Laptop } from "lucide-react";
+import { Award, BadgeCheck, ShieldCheck, GraduationCap, Code, FileCode, Laptop, Database } from "lucide-react";
 
 const certifications = [
   {
