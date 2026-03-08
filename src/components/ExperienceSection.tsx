@@ -3,12 +3,14 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    title: "Deloitte Virtual Internship",
-    desc: "Gained hands-on experience with technology consulting practices, data analytics workflows, and professional problem-solving methodologies used in enterprise environments.",
+    title: "Foundation of Modern Machine Learning (FMML)",
+    duration: "August – May",
+    desc: "Participated in a structured learning program focused on modern machine learning concepts and practical applications.",
   },
   {
-    title: "EduSkills Internship (3 Months)",
-    desc: "Developed practical skills in software development and industry tools through structured learning modules, real-world projects, and mentorship from experienced professionals.",
+    title: "APSSDC Internship",
+    duration: "6 Weeks • AI & Machine Learning",
+    desc: "Completed a training program by Andhra Pradesh State Skill Development Corporation focused on AI and ML fundamentals, learning concepts such as machine learning algorithms and data analysis techniques.",
   },
 ];
 
@@ -43,6 +45,7 @@ const ExperienceSection = () => {
               </div>
               <div>
                 <h3 className="font-semibold mb-1">{exp.title}</h3>
+                <p className="font-mono text-xs text-primary mb-2">{exp.duration}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">{exp.desc}</p>
               </div>
             </motion.div>

@@ -30,7 +30,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          I am a motivated B.Tech student with a deep interest in software development, web technologies, and emerging fields like artificial intelligence and machine learning. My curiosity drives me to explore new tools, frameworks, and methodologies. I thrive on solving complex problems, whether it's optimizing a backend system, designing intuitive user interfaces, or analyzing data for meaningful insights. I believe in continuous learning and am committed to growing as a well-rounded software developer.
+          I am a motivated B.Tech student who enjoys learning new technologies, building projects, and improving both technical and problem-solving skills. My interests span software development, web technologies, and emerging fields like artificial intelligence and machine learning. I believe in continuous growth, hands-on learning, and tackling real-world challenges through technology. Whether it's designing intuitive interfaces, analyzing data, or exploring new frameworks, I'm always eager to expand my skill set and contribute meaningfully.
         </motion.p>
 
         <div className="grid sm:grid-cols-3 gap-6">

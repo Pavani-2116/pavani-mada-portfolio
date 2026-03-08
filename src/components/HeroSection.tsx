@@ -43,7 +43,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          I am a passionate B.Tech student who enjoys building technology-driven solutions and exploring different areas of software development including web development, backend systems, and artificial intelligence. I love learning new tools, solving real-world problems, and continuously improving my technical skills.
+          I am a passionate B.Tech student interested in software development, modern web technologies, and emerging fields like artificial intelligence and machine learning. I enjoy building projects, learning new tools, and solving real-world problems using technology.
         </motion.p>
 
         <motion.div
