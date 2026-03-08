@@ -1,25 +1,26 @@
 import { motion } from "framer-motion";
+import { Code2, Wrench, BookOpen, Users } from "lucide-react";
 
 const categories = [
   {
-    title: "Programming Languages",
-    skills: ["Python", "JavaScript", "SQL"],
+    icon: Code2,
+    title: "Technical Skills",
+    skills: ["Python", "JavaScript", "SQL", "HTML", "CSS"],
   },
   {
-    title: "Web Development",
-    skills: ["HTML", "CSS", "JavaScript", "React (Basic)"],
-  },
-  {
-    title: "Backend & Databases",
-    skills: ["Node.js", "MySQL", "REST APIs"],
-  },
-  {
+    icon: Wrench,
     title: "Tools & Technologies",
-    skills: ["Git", "GitHub", "Power BI", "VS Code"],
+    skills: ["Git", "GitHub", "VS Code", "Power BI", "Excel"],
   },
   {
+    icon: BookOpen,
     title: "Concepts",
-    skills: ["Data Structures", "Problem Solving", "Software Development", "ML Basics"],
+    skills: ["Data Structures", "Web Development", "Software Development", "ML Basics"],
+  },
+  {
+    icon: Users,
+    title: "Soft Skills",
+    skills: ["Communication", "Problem Solving", "Team Collaboration", "Time Management", "Adaptability", "Critical Thinking"],
   },
 ];
 
@@ -39,7 +40,7 @@ const SkillsSection = () => {
           <div className="w-16 h-1 gradient-bg rounded mb-8" />
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((cat, i) => (
             <motion.div
               key={cat.title}
@@ -49,6 +50,9 @@ const SkillsSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.08 * i }}
             >
+              <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center mb-4">
+                <cat.icon size={20} className="text-primary-foreground" />
+              </div>
               <h3 className="font-mono text-sm font-semibold text-primary mb-4">{cat.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {cat.skills.map((skill) => (
