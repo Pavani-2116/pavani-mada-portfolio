@@ -14,7 +14,194 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      drafts: {
+        Row: {
+          created_at: string
+          id: string
+          original_text: string
+          revised_text: string | null
+          title: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          original_text: string
+          revised_text?: string | null
+          title: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          original_text?: string
+          revised_text?: string | null
+          title?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      research_brief_sources: {
+        Row: {
+          research_brief_id: string
+          source_id: string
+        }
+        Insert: {
+          research_brief_id: string
+          source_id: string
+        }
+        Update: {
+          research_brief_id?: string
+          source_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "research_brief_sources_research_brief_id_fkey"
+            columns: ["research_brief_id"]
+            isOneToOne: false
+            referencedRelation: "research_briefs"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "research_brief_sources_source_id_fkey"
+            columns: ["source_id"]
+            isOneToOne: false
+            referencedRelation: "sources"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      research_briefs: {
+        Row: {
+          brief_content: Json
+          created_at: string
+          generation_mode: string
+          id: string
+          research_question: string
+          title: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          brief_content: Json
+          created_at?: string
+          generation_mode?: string
+          id?: string
+          research_question: string
+          title: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          brief_content?: Json
+          created_at?: string
+          generation_mode?: string
+          id?: string
+          research_question?: string
+          title?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      sources: {
+        Row: {
+          created_at: string
+          extracted_text: string | null
+          id: string
+          is_manual: boolean
+          original_url: string | null
+          publication_date: string | null
+          research_note: string | null
+          retrieval_status: string
+          title: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          extracted_text?: string | null
+          id?: string
+          is_manual?: boolean
+          original_url?: string | null
+          publication_date?: string | null
+          research_note?: string | null
+          retrieval_status?: string
+          title?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          extracted_text?: string | null
+          id?: string
+          is_manual?: boolean
+          original_url?: string | null
+          publication_date?: string | null
+          research_note?: string | null
+          retrieval_status?: string
+          title?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      writing_suggestions: {
+        Row: {
+          created_at: string
+          draft_id: string
+          end_offset: number
+          explanation: string
+          id: string
+          issue_type: string
+          original_passage: string
+          source: string
+          start_offset: number
+          status: string
+          suggested_rewrite: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          draft_id: string
+          end_offset: number
+          explanation: string
+          id?: string
+          issue_type: string
+          original_passage: string
+          source?: string
+          start_offset: number
+          status?: string
+          suggested_rewrite: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          draft_id?: string
+          end_offset?: number
+          explanation?: string
+          id?: string
+          issue_type?: string
+          original_passage?: string
+          source?: string
+          start_offset?: number
+          status?: string
+          suggested_rewrite?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "writing_suggestions_draft_id_fkey"
+            columns: ["draft_id"]
+            isOneToOne: false
+            referencedRelation: "drafts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
