@@ -1,73 +1,98 @@
-# Welcome to your Lovable project
+# Pavani Mada | Personal Portfolio
 
-## Project info
+Welcome to my personal portfolio! This website showcases my technical skills, projects, education, and professional profile as an aspiring Full Stack Developer.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🌐 **Live Portfolio:** https://pavanimadaportfolio.netlify.app/
 
-## How can I edit this code?
+💻 **GitHub:** https://github.com/Pavani-2116
 
-There are several ways of editing your application.
+🔗 **LinkedIn:** https://www.linkedin.com/in/pavani-mada/
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## About Me
 
-Changes made via Lovable will be committed automatically to this repo.
+I am an Artificial Intelligence and Data Science graduate interested in Full Stack Development and AI/ML. I enjoy building practical web applications and continuously improving my programming and problem-solving skills.
 
-**Use your preferred IDE**
+This portfolio highlights my learning journey, technical skills, and projects.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend:** React.js, TypeScript
+- **Styling:** Tailwind CSS, shadcn/ui
+- **Build Tool:** Vite
+- **Backend / Services:** Supabase
+- **Version Control:** Git and GitHub
+- **Deployment:** Netlify
 
-Follow these steps:
+## Portfolio Sections
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Home:** Professional introduction and resume access.
+- **About Me:** Education and background.
+- **Skills:** Technical skills and development tools.
+- **Projects:** Personal and academic projects with GitHub links.
+- **Contact:** Contact information and social profiles.
+- **Resume:** View and download my resume.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Featured Projects
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Support Ticket System** – A ticket management application with authentication and role-based access.
+2. **Resume Builder & ATS Score Checker** – A web application for creating resumes and checking keyword matching.
+3. **AI-Powered Smart Waste Classifier** – An AI-based application for classifying different types of waste.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## Run Locally
+
+Follow these steps to run the project on your local machine.
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/Pavani-2116/pavani-mada-portfolio.git
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd pavani-mada-portfolio
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Configure environment variables**
+
+Create a `.env` file in the root directory and add your own Supabase project configuration:
+
+```env
+VITE_SUPABASE_PROJECT_ID=your_project_id
+VITE_SUPABASE_PUBLISHABLE_KEY=your_publishable_key
+VITE_SUPABASE_URL=your_supabase_url
+```
+
+**5. Start the development server**
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open the local URL displayed in your terminal.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Deployment
 
-**Use GitHub Codespaces**
+This portfolio is deployed using **Netlify**.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🌐 https://pavanimadaportfolio.netlify.app/
 
-## What technologies are used for this project?
+## Contact
 
-This project is built with:
+- **GitHub:** https://github.com/Pavani-2116
+- **LinkedIn:** https://www.linkedin.com/in/pavani-mada/
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+⭐ Thank you for visiting my portfolio!
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Feel free to explore my projects and connect with me.
